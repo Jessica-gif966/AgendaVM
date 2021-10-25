@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AGENDA"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="51dp"
+            android:src="@drawable/usuario"
+            android:layout_height="51dp"></ImageView>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+        app:counterEnabled="true"
+        app:counterMaxLength="12"
+        app:helperText="Maximo 12 letras"
+        >
+        <EditText
+            android:id="@+id/et1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+
+            android:layout_height="wrap_content"></EditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="51dp"
+            android:src="@drawable/password"
+            android:layout_height="51dp"></ImageView>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:counterEnabled="true"
+            app:counterMaxLength="8"
+            app:helperText="Maximo 8 letras"
+            >
+            <EditText
+                android:id="@+id/et2"
+                android:layout_width="match_parent"
+                android:hint="Contraseña"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:inputType="textPassword"
+
+                android:layout_height="wrap_content"></EditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn"
+            android:layout_margin="20dp"
+            android:text="CANCELAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn1"
+            android:layout_margin="20dp"
+            android:text="ACCEDER"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
